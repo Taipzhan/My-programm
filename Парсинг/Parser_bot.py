@@ -42,7 +42,6 @@ def txt(message):
         try:
             for j in range(13):
                 browser.get('https://kaspi.kz/shop/c/smartphones/brand-samsung/?at=1&page=' + str(j))
-                # browser.find_element_by_xpath('/html/body/div[6]/div[1]/div/div[1]').find_element_by_xpath('/html/body/div[6]/div[1]/div/div[1]/div[1]/div/ul[1]/li[8]/a').click()
                 # ------ тут мы вытаскием уже содержимое тело сайта из бразуера, для парсинга в bs4
                 page = browser.page_source
 
@@ -72,7 +71,6 @@ def txt(message):
         try:
             for j in range(19):
                 browser.get('https://kaspi.kz/shop/c/smartphones/class-apple/?page={}'.format(str(j)))
-                # browser.find_element_by_xpath('/html/body/div[6]/div[1]/div/div[1]').find_element_by_xpath('/html/body/div[6]/div[1]/div/div[1]/div[1]/div/ul[1]/li[8]/a').click()
                 # ------ тут мы вытаскием уже содержимое тело сайта из бразуера, для парсинга в bs4
                 page = browser.page_source
 
@@ -101,7 +99,6 @@ def txt(message):
         try:
             for j in range(11):
                 browser.get('https://kaspi.kz/shop/c/smartphones/brand-xiaomi/?q=%3Acategory%3ASmartphones&page={}'.format(str(j)))
-                # browser.find_element_by_xpath('/html/body/div[6]/div[1]/div/div[1]').find_element_by_xpath('/html/body/div[6]/div[1]/div/div[1]/div[1]/div/ul[1]/li[8]/a').click()
                 # ------ тут мы вытаскием уже содержимое тело сайта из бразуера, для парсинга в bs4
                 page = browser.page_source
 
